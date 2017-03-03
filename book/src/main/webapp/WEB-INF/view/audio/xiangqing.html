@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>书香中国</title>
+<link href="../common/layout.css" rel="stylesheet" />
+<link href="../common/tingshu.css" rel="stylesheet" />
+<script type="text/javascript" src="../script/tab.js"></script>
+<script type="text/javascript" src="../script/MP3Player.js"></script>
+<script type="text/javascript">
+	chineseallPlayer.start = function(){
+		var Player = new chineseallPlayer("Chineseall_Player");
+		/*声音地址*/
+		Player.loadURL("dayan.mp3");
+		/*自动播放*/
+		Player.startPlay();
+		/*播放结束后操作*/
+		Player.onEndPlay(function(){
+			alert("播放完成");
+		});
+		/****************************************/
+	}
+</script>
+</head>
+
+<body>
+<div class="header">
+	<div class="headTop">
+		<div class="headMenu">
+			<a href="#">书香中国</a><a href="#">阅览室</a><a href="#">平台介绍</a><a href="#">如何成为用户</a>
+		</div>
+		<div class="headLogin">
+			<a href="#">登录</a><a href="#">注册</a>
+		</div>
+	</div>
+	<div class="headMain">
+		<h1>书香江苏阅读平台</h1>
+		<div class="headSearch">
+			<input class="ipt" type="text" onmouseout="if(this.value=='')this.value=this.defaultValue" onmouseover="if(this.value==this.defaultValue)this.value=''" value="书名/作者名" />
+			<input class="btn" type="button" value="" />
+		</div>
+	</div>
+	<div class="headNav">
+		<ul>
+			<li class="aIndex"><a href="../index.html">首页</a></li>
+			<li><a href="#">阅览室</a></li>
+			<li class="current"><a href="#">听书馆</a></li>
+			<li><a href="#">新闻</a></li>
+			<li><a href="../huodong/index.html">读书活动</a></li>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">相关组织</a></li>
+			<li><a href="#">云书城</a></li>
+		</ul>
+	</div>
+</div>
+<div class="tingshu">
+	<div class="w310 left">
+		<div class="bb1 sideMenu">
+			<dl class="on">
+				<dt>畅销・小说......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">文学理论 <em>(23)</em></a></li>
+						<li><a href="#">国学<em>(6)</em></a></li>
+						<li><a href="#">作品赏析<em>(2)</em></a></li>
+						<li class="on"><a href="#">经典文学<em>(15)</em></a></li>
+						<li><a href="#">散文随笔<em>(16)</em></a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>评书・曲艺 ......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">中国近现代小说<em>(95)</em></a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>经管・养生 ......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">历史<em>(75)</em></a></li>
+						<li><a href="#">政治军事<em>(3)</em></a></li>
+						<li><a href="#">文化<em>(1)</em></a></li>
+						<li><a href="#">人物传记<em>(2)</em></a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>儿童・文学 ......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">百科全书<em>(3)</em></a></li>
+						<li><a href="#">人体<em>(5)</em></a></li>
+						<li><a href="#">地理<em>(14)</em></a></li>
+						<li><a href="#">自然灾害<em>(12)</em></a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>综艺・娱乐 ......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">百科全书<em>(3)</em></a></li>
+						<li><a href="#">人体<em>(5)</em></a></li>
+						<li><a href="#">地理<em>(14)</em></a></li>
+						<li><a href="#">自然灾害<em>(12)</em></a></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt>中图法 ......</dt>
+				<dd>
+					<ul>
+						<li><a href="#">马克思主义、列宁主义</a></li>
+						<li><a href="#">哲学、宗教</a></li>
+						<li><a href="#">社会科学总论</a></li>
+						<li class="c"><a href="#">【所有分类】</a></li>
+					</ul>
+				</dd>
+			</dl>
+			
+		</div>
+		<div class="bb1 mt10">
+			<div class="tit1">
+				<h2>我的听书动态</h2>
+				<ul class="bookTab2">
+					<li class="hot_a" onclick=" tabit('ts1',0,3,'hot')" id="ts1_btn0">1</li>
+					<li onclick=" tabit('ts1',1,3,'hot')" id="ts1_btn1">2</li>
+					<li onclick=" tabit('ts1',2,3,'hot')" id="ts1_btn2">3</li>
+				</ul>
+			</div>
+			<div class="con box5List">
+				<div id="ts1_div0">
+					<div class="boxListLi5">
+						<div class="img"><a href="#"><img src="../images/85x120.jpg" /></a></div>
+						<h2><a href="#">深夜食堂 01</a></h2>
+						<div class="other">作者：<span>子金山</span> / 朗读：<span>纪涵邦</span></div>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</div>
+					<strong>刚刚听到：</strong>
+					<p><em>23:59</em><b>第1集</b>宁可负尽天下人，也不可为天下人所负</p>
+				</div>
+				<div id="ts1_div1" style="display:none;">
+					<div class="boxListLi5">
+						<div class="img"><a href="#"><img src="../images/85x120.jpg" /></a></div>
+						<h2><a href="#">深夜食堂 02</a></h2>
+						<div class="other">作者：<span>子金山</span> / 朗读：<span>纪涵邦</span></div>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</div>
+					<strong>刚刚听到：</strong>
+					<p><em>23:59</em><b>第1集</b>宁可负尽天下人，也不可为天下人所负</p>
+				</div>
+				<div id="ts1_div2" style="display:none;">
+					<div class="boxListLi5">
+						<div class="img"><a href="#"><img src="../images/85x120.jpg" /></a></div>
+						<h2><a href="#">深夜食堂 03</a></h2>
+						<div class="other">作者：<span>子金山</span> / 朗读：<span>纪涵邦</span></div>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</div>
+					<strong>刚刚听到：</strong>
+					<p><em>23:59</em><b>第1集</b>宁可负尽天下人，也不可为天下人所负</p>
+				</div>
+			</div>
+		</div>
+		<div class="bb1 mt10">
+			<div class="tit1">
+				<h2>猜你可能感兴趣......</h2>
+			</div>
+			<div class="con boxListLi6">
+				<ul>
+					<li>
+						<a href="#"><img src="../images/85x120.jpg" /></a>
+						<h3><a href="#">沃顿商学院最受欢迎的谈判课</a></h3>
+						<p>
+							作者：<span>子金山</span><br />
+							朗读：<span>纪涵邦</span>
+						</p>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="../images/85x120.jpg" /></a>
+						<h3><a href="#">沃顿商学院最受欢迎的谈判课</a></h3>
+						<p>
+							作者：<span>子金山</span><br />
+							朗读：<span>纪涵邦</span>
+						</p>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</li>
+					<li>
+						<a href="#"><img src="../images/85x120.jpg" /></a>
+						<h3><a href="#">沃顿商学院最</a></h3>
+						<p>
+							作者：<span>子金山</span><br />
+							朗读：<span>纪涵邦</span>
+						</p>
+						<div class="tsBtn">
+							<a class="video_play" href="#">播放</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="w630 right">
+		<div class="bb1 tingshuList">
+			<div class="path">
+				<h2><a href="#">畅销・小说</a> > <span>经典文学</span></h2>
+			</div>
+			<div class="con xiangqing">
+				<div class="boxListLi5">
+					<div class="img"><a href="#"><img src="../images/142x200.jpg" /></a></div>
+					<h2><a href="#">深夜食堂 01</a></h2>
+					<div class="other">作者：<span>子金山</span> / 朗读：<span>纪涵邦</span> / 总章节：<span>30</span> / 总时长：<span>11小时55分钟</span></div>
+					<p>目送共由七十四篇散文组成，是为一本极具亲情、感人至深的文集。由父亲的逝世、母亲的苍老、儿子的离开、朋友的牵挂、兄弟的携手共行，写出失败和脆弱、失落和放手，写... </p>
+					<div class="box">
+						<h2>秘藏1937：第一节</h2>
+						<div class="tsBtn">
+							<a class="video_sc" href="#">收藏</a>
+							<a class="video_tj" href="#">推荐</a>
+						</div>
+						<div class="flashVideo">
+							<object width="388" height="40" id="Chineseall_Player" data="MP3Player.swf" type="application/x-shockwave-flash" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+								<param name="movie" value="MP3Player.swf" />
+								<param name="wmode" value="transparent" />
+								<param name="quality" value="high" />
+								<param name="allowScriptAccess" value="always" />
+								<embed width="388" height="40" src="../script/MP3Player.swf" name="Chineseall_Player" quality="high" allowScriptAccess="always" swLiveConnect="true" type="application/x-shockwave-flash"></embed>
+							</object>
+						</div>
+					</div>
+				</div>
+				<div class="xiangqingList">
+					<ul>
+						<li class="td">
+							<span class="zj">章节列表</span>
+							<span class="time">时长</span>
+							<div class="tsBtn">
+								播放
+							</div>
+						</li>
+						<li class="td">
+							<span class="zj">章节列表</span>
+							<span class="time">时长</span>
+							<div class="tsBtn">
+								播放
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第01集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第02集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第03集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						<li>
+							<span class="zj">第04集</span>
+							<span class="time">21:52</span>
+							<div class="tsBtn">
+								<a class="video_play" href="#">播放</a>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="page">page</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="footMain">
+		<dl>
+			<dt>关于我们</dt>
+			<dd><a href="#">书香中国</a></dd>
+			<dd><a href="#">机构组织</a></dd>
+			<dd><a href="#">机构加盟</a></dd>
+			<dd><a href="#">联系方式</a></dd>
+		</dl>
+		<dl>
+			<dt>使用帮助</dt>
+			<dd><a href="#">如何建立书房</a></dd>
+			<dd><a href="#">如何看书</a></dd>
+			<dd><a href="#">如何充值</a></dd>
+			<dd><a href="#">如何？</a></dd>
+		</dl>
+		<dl>
+			<dt>关于我们</dt>
+			<dd><a href="#">书香中国</a></dd>
+			<dd><a href="#">机构组织</a></dd>
+			<dd><a href="#">机构加盟</a></dd>
+			<dd><a href="#">联系方式</a></dd>
+		</dl>
+		<dl>
+			<dt>使用帮助</dt>
+			<dd><a href="#">如何建立书房</a></dd>
+			<dd><a href="#">如何看书</a></dd>
+			<dd><a href="#">如何充值</a></dd>
+			<dd><a href="#">如何？</a></dd>
+		</dl>
+		<dl>
+			<dt>关于我们</dt>
+			<dd><a href="#">书香中国</a></dd>
+			<dd><a href="#">机构组织</a></dd>
+			<dd><a href="#">机构加盟</a></dd>
+			<dd><a href="#">联系方式</a></dd>
+		</dl>
+		<dl>
+			<dt>使用帮助</dt>
+			<dd><a href="#">如何建立书房</a></dd>
+			<dd><a href="#">如何看书</a></dd>
+			<dd><a href="#">如何充值</a></dd>
+			<dd><a href="#">如何？</a></dd>
+		</dl>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS yuyang louis */
+.huodong{ margin:10px auto; width:950px; overflow:hidden;}
+.huodong_topList,.huodong_bottomList{ width:960px; overflow:hidden;}
+.huodong_topList .bb1{ float:left; margin-right:10px; width:308px;}
+.huodongMeunTitle{ height:52px; background:url(img/huodong_bg1.png) no-repeat right top #fafafa;}
+.huodongMeunTitle h2{ float:left; padding:0 52px 0 20px; font-size:24px; line-height:52px; font-weight:normal;}
+.huodongMeunTitle ul{ float:left; padding-top:16px; height:20px;}
+.huodongMeunTitle li{ float:left; padding:0 33px 0 25px; height:20px; line-height:20px; font-size:14px; cursor:pointer;}
+.huodongMeunTitle li.s1{ color:#156972; background-position:-10px -730px;}
+.huodongMeunTitle li.s2{ color:#892928; background-position:-10px -770px;}
+.huodongMeunTitle li.s3{ color:#c48600; background-position:-10px -810px;}
+.huodong_bottomList{ margin-top:-10px;}
+.huodong_bottomList .bb1{ float:left; margin-top:10px; margin-right:10px; padding:16px; width:276px; height:194px;}
+.huodong_list_t{ padding-left:72px; height:150px;}
+.huodong_list_t .img{ position:absolute; margin-left:-72px; width:60px; height:60px;}
+.huodong_list_t h3{ margin-bottom:5px; font-size:14px; height:18px; overflow:hidden; font-weight:normal;}
+.huodong_list_t .p{ height:90px; overflow:hidden;}
+.huodong_list_t .pimg{ border:#999 1px solid; width:202px; height:88px; overflow:hidden;}
+.huodong_list_t .pimg img{ width:202px;}
+.huodong_list_t .l{ margin-top:3px; height:30px;}
+.huodong_list_t .l li{ float:right; padding:0 15px 0 18px; height:30px; line-height:30px; overflow:hidden;}
+.huodong_list_t .l li.b1{ background-position:-13px -486px;}
+.huodong_list_t .l li.b2{ background-position:-13px -526px;}
+.huodong_list_t .l li.b3{ background-position:-13px -565px; padding:0; width:20px; overflow:hidden; text-indent:-999em;}
+.huodong_list_t .l li.b3 a{ display:block;}
+.huodong_list_b{ position:relative; padding:7px 0 3px 44px; background:url(img/line1.png) repeat-x left top;}
+.huodong_list_b a{ display:block; height:36px; overflow:hidden;}
+.huodong_list_b .b2{ background-position:-33px 0;}
+.huodong_list_b .b3{ background-position:-66px 0;}
+.hdTextBg{ position:absolute; margin-top:-7px; margin-left:-44px; text-align:center; padding-top:2px; width:33px; height:44px; color:#fff;}
+.rjigou_p{ padding-left:14px; font-size:14px;}
+.gg{ margin-top:-10px; padding:0 14px 14px;}
+.gg dl{ padding:8px 0 9px; background:url(img/line1.png) repeat-x left bottom;}
+.gg dl span{ color:#666;}
+.gg dt{ height:18px; overflow:hidden; font-size:14px; cursor:pointer;}
+.gg dt span{ float:right;}
+.gg dd{ margin-top:8px; color:#666; display:none;}
+.gg dd p{ text-indent:2em;}
+.gg dl.d dt{ height:auto;}
+.gg dl.d dt span{ display:none;}
+.ggPage span{ float:left;}
+.ggPage a{ float:left; margin:17px 3px 0; display:inline; width:16px; height:16px; line-height:16px; text-align:center; color:#fff; background-position:0 -46px;}
+.ggPage a:hover{ background-position:-16px -46px;}
+.hd_zp{ margin-left:-1px; height:70px;}
+.hd_zp li{ float:left; border-width:0 0 0 1px; padding-top:5px; width:102px; height:65px; line-height:28px; text-align:center;}
+.hd_zp li strong{ font-weight:normal;}
+.hd_zp li strong.hot{ padding:0 18px; background:url(img/icon_hot.png) no-repeat right center;}
+.hd_zp li p{ font-size:24px;}
+.bang ul{ margin-top:-5px; padding:0 14px 14px;}
+.bang li{ height:31px; line-height:31px; overflow:hidden; background:url(img/line1.png) repeat-x left bottom;}
+.bang li em{ float:right;}
+.huodong_left{ float:left; width:628px;}
+
+.path{ padding:5px 14px;}
+.path h2 em{ font-size:14px;}
+.path h2 b{ margin:0 5px; font-weight:normal;}
+
+.jigou{ margin:-10px 0 10px; width:628px; overflow:hidden;}
+.jigouList{ float:left; position:relative; margin:12px 0 0 12px; display:inline; padding:4px; width:134px; overflow:hidden; background:#eff7f2;}
+.jigouList .img{ padding:10px 0; text-align:center;}
+.jigouList .img img{ margin:0 auto; display:block; border:#ccc 1px solid; width:100px; height:100px;}
+.jigouList .img span{ margin-top:10px; display:block; font-size:14px; height:18px; overflow:hidden;}
+.jigouList .indexMenuList{ margin:0; border-top:#fff 1px solid; width:auto;}
+.jigouList .indexMenuList ul{ padding:3px 0;}
+.jigouList .indexMenuList li{ float:none; margin-right:0; margin-left:-5px; border:0; width:103px; background-color:#eff7f2;}
+
+.jigouList .hot,.jigouList .new{ position:absolute; top:4px; left:4px; width:32px; height:32px; overflow:hidden; text-indent:-999em; background:url(img/hot.png) no-repeat; z-index:999;}
+.jigouList .new{ background-image:url(img/new.png);}
+
+.huodongTitleMenu{ border-width:0 0 1px; height:70px; text-align:center;}
+.huodongTitleMenu ul{ float:left;}
+.huodongTitleMenu li{ float:left; width:80px; height:70px;}
+.huodongTitleMenu li a{ display:block; padding:38px 0 0 0; width:80px; height:32px; background:url(img/bg2.png) no-repeat;}
+.huodongTitleMenu li.b1 a{ background-position:0px 0;}
+.huodongTitleMenu li.b2 a{ background-position:-80px 0;}
+.huodongTitleMenu li.b3 a{ background-position:-160px 0;}
+.huodongTitleMenu li.b4 a{ background-position:-240px 0;}
+.huodongTitleMenu li.b5 a{ background-position:-320px 0;}
+.huodongTitleMenu li.b6 a{ background-position:-400px 0;}
+.huodongTitleMenu li.b1 a:hover{ background-position:0px -70px;}
+.huodongTitleMenu li.b2 a:hover{ background-position:-80px -70px;}
+.huodongTitleMenu li.b3 a:hover{ background-position:-160px -70px;}
+.huodongTitleMenu li.b4 a:hover{ background-position:-240px -70px;}
+.huodongTitleMenu li.b5 a:hover{ background-position:-320px -70px;}
+.huodongTitleMenu li.b6 a:hover{ background-position:-400px -70px;}
+.huodongTitleMenu .btn{ float:right; margin:14px 14px 0 0; display:inline; width:118px; height:42px; line-height:42px;}
+.huodongTitleMenu .btn a{ display:block; font-size:18px;}
+.huodongContentImg{ text-align:center;}
+.huodongContentImg img{ margin:0 auto; display:block; border:#999 1px solid; width:600px; height:180px;}
+.huodongContentHd{ margin:14px;}
+.huodongContentHd dt{ padding:3px 0 0 76px; height:44px;}
+.huodongContentHd dt h3,.huodongContentHd dt h3 strong{ font-weight:normal;}
+.huodongContentHd dt h3{ margin-bottom:5px;}
+.huodongContentHd dt em{ margin-left:8px;}
+.huodongContentHd dt .t{ position:absolute; margin-left:-76px; margin-top:-3px; padding-top:25px; width:65px; height:22px; text-align:center; color:#fff;}
+.huodongContentHd dt .b1{ background-position:0 -62px;}
+.huodongContentHd dd{ margin-top:8px; padding:0 4px; color:#666;}
+.houdongContentBox{ margin:14px;}
+.houdongContentBox_list{ margin:14px 0 -1px; width:600px; background:url(img/line2.png) repeat-y center top; overflow:hidden;}
+.wListArea{ float:left; border-bottom:#ccc 1px solid; padding:14px 14px 0 14px; width:271px; overflow:hidden;}
+.canjiaArea{ float:left; position:relative; border-bottom:#ccc 1px solid; padding:14px 14px 0 84px; width:201px; height:74px;}
+.canjiaArea img{ position:absolute; margin-left:-70px; width:60px; height:60px;}
+.canjiaArea span{ padding-right:14px;}
+.canjiaArea span.w{ background-position:right -611px;}
+.canjiaArea span.m{ background-position:right -651px;}
+.canjiaArea a,.canjiaArea p{ color:#666;}
+.canjiaArea p{ margin-top:5px;}
+
+.cja_btn{ position:absolute; top:14px; right:14px; width:68px;}
+.cja_btn a{ display:block; margin-bottom:7px; height:26px; line-height:26px; text-align:center; color:#fff; background-color:#1baa8f;}
+.cja_btn a.a_gz{ padding-left:18px; background-position:-6px -885px;}
+.cja_btn a.a_mail{ padding-left:14px; background-position:-5px -845px;}
+.cja_btn a.a_qx{ background:#ccc;}
+
+.shaixuan{ border:#ccc 1px solid; border-top:#468b62 2px solid;}
+.shaixuan dl{ margin:0 auto; margin-bottom:-1px; padding:10px 0; width:580px; overflow:hidden; background:url(img/line1.png) repeat-x left bottom;}
+.shaixuan dt{ float:left; width:110px; text-align:right;}
+.shaixuan dd{ float:left; width:470px; overflow:hidden;}
+.shaixuan dd ul{ float:left; width:410px; overflow:hidden;}
+.shaixuan dd li{ float:left; white-space:nowrap;}
+.shaixuan dd li a{ padding:3px 5px;}
+.shaixuan dd span{ float:right; display:block; padding-left:4px; width:42px; height:19px; color:#999; cursor:pointer;}
+.shaixuan dd span.s{ background-position:0 -129px;}
+.shaixuan dd span.z{ background-position:0 -110px;}
+.shaixuan dd .sc li a{ color:#fff;}
+
+.line2{ clear:both; position:relative; z-index:999; background:#fff; height:1px; font-size:0px; overflow:hidden;}
+.bookList{ margin-top:22px; background:url(img/bg1.png) repeat-y center top;}
+.bookList ul{ width:545px;}
+.houdongContentBox .bookTab2{ float:none; margin-top:-40px; padding-left:270px; height:40px;}
+.huodongContent_title{ border-bottom:#ccc 1px solid; padding:0 10px; height:41px; overflow:hidden; background:#e7e7e7;}
+.huodongContent_title h2{ float:left; padding:10px 14px 0 0; font-size:14px; font-weight:normal;}
+.huodongContent_title .s1{ padding-left:22px; background-position:-12px -520px;}
+.huodongContent_title span{ float:left; padding:12px 0 0 0;}
+.huodongContent_title .a_right{ float:right; padding:12px 0 0 0;}
+.huodongContent_title .a_right .on{ font-weight:bold;}
+.zhengwen{ margin:14px;}
+.zhengwen_path{ font-size:14px; line-height:25px;}
+.zhengwen_tx{ padding:14px 0 14px 72px;}
+.zhengwen_tx img{ position:absolute; margin-left:-72px; margin-top:3px; width:60px; height:60px;}
+.zhengwen_tx h2{ margin-bottom:7px; line-height:24px; font-size:24px; font-weight:normal;}
+.zhengwen_tx span{ color:#999;}
+.zhengwenContent p{ margin:5px 0; text-indent:2em;}
+.bottomBtn{ height:29px;}
+.bottomBtn a{ float:right; margin-left:5px; border:#ccc 1px solid; padding:0 8px 0 28px; line-height:27px;}
+.bottomBtn a.fx{ background-position:-5px -567px;}
+.bottomBtn a.z{ background-position:-5px -487px;}
+.pinglun{ margin:14px;}
+.pinglun_input{ margin:14px 0; width:600px; overflow:hidden;}
+.pinglun_input .tac{ float:left; margin:0; padding:5px; width:588px; height:110px;}
+.pinglun_input .btn{ float:right; margin-top:6px; border:0; color:#fff; width:100px; height:31px; font-size:18px; cursor:pointer;}
+.pinglun_user .huodong_list_t,.pinglun_user .huodong_list_t .p{ height:auto;}
+.pinglun_user .huodong_list_t{ padding-top:14px; padding-bottom:14px; border-bottom:#ccc 1px solid;}
+.pinglun_user .huodong_list_t h3{ display:inline;}
+.pinglun_user .huodong_list_t span{ margin-left:8px; color:#999;}
+.pinglun_user .huodong_list_t .p{ margin-top:5px;}

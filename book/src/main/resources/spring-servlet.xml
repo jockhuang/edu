@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+						http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+						http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+    
+    <mvc:annotation-driven />
+    	
+	<context:component-scan base-package="cn.chineseall.book" />
+	
+	<mvc:interceptors>  
+        <!-- 多个拦截器,顺序执行,如果在多个拦截器里匹配成功的话将执行多个拦截器,此处的拦截器顺序需要设置好  -->  
+        <!-- 域名拦截器 -->
+        <mvc:interceptor>  
+           <mvc:mapping path="/**" />
+           <bean id="domainInterceptor" class="cn.chineseall.book.interceptor.DomainInterceptor">
+	           <property name="filterControllerSet">
+	               <set>
+	                     <value>/error.action</value>
+	                     <value>/eduyun/payment/sycronizeNotify.action</value>
+	                     <value>/eduyun/payment/asycronizeNotify.action</value>
+	               </set>
+	           </property>
+           </bean>
+        </mvc:interceptor>
+        
+        <!-- 用户登录信息拦截器 -->
+        <mvc:interceptor>  
+           <mvc:mapping path="/**" />
+           <bean id="userLoginInfoInterceptor" class="cn.chineseall.book.interceptor.UserLoginInfoInterceptor">
+           </bean>
+        </mvc:interceptor>
+        
+        <!-- 登录拦截器 -->
+        <mvc:interceptor>  
+           <mvc:mapping path="/**" />
+           <bean id="loginInterceptor" class="cn.chineseall.book.interceptor.LoginInterceptor">
+           </bean>
+        </mvc:interceptor>
+        
+        <!-- 后台管理权限拦截器 -->
+        <mvc:interceptor>  
+           <mvc:mapping path="/manage/**" />
+           <bean id="ManagerInterceptor" class="cn.chineseall.book.interceptor.ManagerInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>  
+           <mvc:mapping path="/user/**" />
+           <bean id="StudyInterceptor" class="cn.chineseall.book.interceptor.StudyInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>    
+    
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<util:list id="beanList">
+				<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+			</util:list>
+		</property>
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">  
+        <!-- one of the properties available; the maximum file size in bytes -->  
+        <property name="maxUploadSize" value="100000000" />  
+    </bean>  
+    
+	<bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/view/" />
+		<property name="freemarkerVariables">
+			<map>
+				<entry key="xml_escape" value-ref="fmXmlEscape"/>				
+			</map>
+		</property>
+		<property name="freemarkerSettings">
+		    <util:properties location="classpath:freemarker.properties"></util:properties>
+		</property>
+	</bean>
+	
+	<bean id="fmXmlEscape" class="freemarker.template.utility.XmlEscape" />
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="cache" value="true"/>
+		<property name="prefix" value=""/>
+		<property name="suffix" value=".ftl"/>
+		<property name="contentType" value="text/html;charset=UTF-8"/>
+	</bean>
+	<import resource="application-context.xml" />
+</beans>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS yuyang louis */
+.tingshu{ margin:10px auto; width:950px; overflow:hidden;}
+
+.box5List{ padding:0 14px 14px;}
+.box5List .boxListLi5{ margin:0; background:none;}
+.box5List .boxListLi5 h2{ padding-top:20px;}
+.box5List strong{ color:#666; font-weight:normal;}
+.box5List p b{ margin-right:8px; font-weight:normal;}
+.box5List p em{ float:right;}
+
+.tingshuList{ padding:14px;}
+
+
+.xiangqing .boxListLi5{ padding-left:204px; padding-bottom:0; height:210px; background:none;}
+.xiangqing .boxListLi5 h2{ padding-top:6px; font-size:16px;}
+.xiangqing .boxListLi5 .img{ margin-left:-204px; padding:2px 49px 6px 2px; width:144px; height:202px; background:url(img/bg3.png) no-repeat; z-index: 999;}
+.xiangqing .boxListLi5 .img img{ width:142px; height:200px;}
+.xiangqing .box{ position:absolute; margin:20px 0 0 -202px; padding:10px 0 10px 202px; width:396px; height:72px; overflow:hidden; background:#f2f2f2;}
+.xiangqing .box h2{ float:left; padding:0; width:270px; height:18px; overflow:hidden;}
+.xiangqing .box .tsBtn{ float:right; margin:0; width:116px;}
+
+.flashVideo{ float:left; margin-top:10px; width:396px;}
+
+.xiangqingList{ margin:13px 0; width:600px; overflow:hidden;}
+.xiangqingList ul{ width:604px; overflow:hidden;}
+.xiangqingList li{ float:left; margin:1px 5px 0 0; padding:8px 0; width:297px; overflow:hidden; height:22px; line-height:22px; background:#f4f8fa;}
+.xiangqingList li span{ float:left; padding-left:12px; width:102px;}
+.xiangqingList li.td{ margin-bottom:3px; border-bottom:#89a1ae 1px solid; font-size:14px; color:#666; background:#e9eef0;}
+.xiangqingList li .tsBtn{ float:left;}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators">
+    <excludes>		
+		<pattern>/*.htm</pattern>
+		<pattern>/*.html</pattern>
+		<pattern>/script/*.*</pattern>
+		<pattern>/images/*.*</pattern>
+		<pattern>/css/*.css</pattern>
+		<pattern>/spring.ftl</pattern>
+		<pattern>/upload/*</pattern>
+		<pattern>/book/directory.action*</pattern>
+		<pattern>/book/showrecommendbook.action*</pattern>
+		<pattern>/user/*</pattern>
+		<pattern>/jury/*</pattern>
+		<pattern>/fckeditor/*</pattern>
+		<pattern>/login.action*</pattern>
+		<pattern>/customLogin.action*</pattern>
+		<pattern>/showRegister.action*</pattern>
+		<pattern>/searchOrg.action*</pattern>
+		<pattern>/editorUpload.action*</pattern>
+		<pattern>/registers/*.*</pattern>
+		<pattern>/manage/tree/showUpdateTreeLogo.action*</pattern>
+		<pattern>/manage/tree/updateTreeLogo.action*</pattern>
+		<pattern>/manage/content/uploadBookImg.action*</pattern>
+		<pattern>/manage/content/showUploadBookImg.action*</pattern>
+		<pattern>/eduyun/orders/gotoPay.action*</pattern>
+	</excludes>
+    <decorator name="org-master" page="org-master.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+    <decorator name="light-master" page="light-master.jsp">
+        <pattern>/password/*</pattern>
+        <pattern>/showLogin.action</pattern>
+        <pattern>/error.action*</pattern>
+        <pattern>/exception*</pattern>
+    </decorator>
+    <decorator name="manage-master" page="manage-master.jsp">
+        <pattern>/manage/*</pattern>
+    </decorator>
+</decorators>
